@@ -1,7 +1,7 @@
 {
   "Human": {
     "DisplayName": "human",
-    "Enabled": true,
+    "Enabled": false,
     "ModActive": true,
     "BasePrice": 1750,
     "MinAge": 16,
