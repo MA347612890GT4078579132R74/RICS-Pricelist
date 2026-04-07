@@ -1,0 +1,23 @@
+{
+  "total": 2,
+  "viewers": [
+    {
+      "username": "numbinator",
+      "karma": 101,
+      "coins": 2000069,
+      "isBanned": false,
+      "platformIds": {
+        "twitch": "42819963"
+      }
+    },
+    {
+      "username": "arionequus",
+      "karma": 154,
+      "coins": 990338,
+      "isBanned": false,
+      "platformIds": {
+        "twitch": "39337837"
+      }
+    }
+  ]
+}
