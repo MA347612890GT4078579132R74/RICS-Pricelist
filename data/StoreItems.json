@@ -10420,7 +10420,7 @@
       "IsEquippable": true,
       "IsWearable": true,
       "Mod": "Anomaly",
-      "BasePrice": 1200,
+      "BasePrice": 1000000,
       "Category": "Misc",
       "Enabled": false,
       "modactive": true
