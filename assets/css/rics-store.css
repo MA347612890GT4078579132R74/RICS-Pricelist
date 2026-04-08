@@ -49,11 +49,11 @@ header h1 {
     border-bottom: 3px solid transparent;
 }
 .tab-button:hover {
-    background: #f0f3ff; /* light blue tint on hover */
+    background: #f0f3ff;
 }
 .tab-button.active {
     background: white;
-    border-bottom: 3px solid #667eea; /* match header start color */
+    border-bottom: 3px solid #667eea;
     color: #667eea;
     font-weight: bold;
 }
@@ -148,15 +148,88 @@ header h1 {
     margin-top: 5px;
 }
 
-/* Race-specific styles */
-.race-xenotype {
+/* ==================== RACES COLLAPSIBLE GROUPS ==================== */
+.races-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.race-group {
+    border: 1px solid #c3c8e0;
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+    transition: all 0.2s ease;
+}
+
+.race-group:hover {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.race-group summary {
+    padding: 16px 20px;
+    cursor: pointer;
     background: linear-gradient(135deg, #f0f3ff 0%, #f5f0ff 100%);
+    font-weight: 600;
+    color: #334155;
+    list-style: none;
+    position: relative;
+    border-bottom: 1px solid #e2e8f0;
 }
-.race-base {
-    background-color: white;
+
+.race-group summary::-webkit-details-marker {
+    display: none;
 }
-.items-table tr.race-base {
-    border-bottom: 2px solid #dee2e6;
+
+.race-group summary::after {
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    color: #667eea;
+    transition: transform 0.25s ease;
+    font-size: 1.1em;
+}
+
+.race-group[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.race-group summary strong {
+    color: #1e40af;
+}
+
+.xenotype-list {
+    padding: 8px 0;
+    background: #fafcff;
+}
+
+.xenotype-item {
+    padding: 12px 20px;
+    border-bottom: 1px solid #e6e9f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.xenotype-item:hover {
+    background: #f0f4ff;
+}
+
+.xenotype-item:last-child {
+    border-bottom: none;
+}
+
+.xenotype-item strong {
+    color: #1e3a8a;
+}
+
+.xenotype-item .defname {
+    font-size: 0.82rem;
+    color: #64748b;
+    margin-left: 8px;
 }
 
 /* Responsive design */
@@ -179,15 +252,27 @@ header h1 {
     header h1 {
         font-size: 2rem;
     }
+
+    .race-group summary {
+        padding: 14px 16px;
+    }
 }
 
-/* Additional accents to match the bluish theme */
+/* Additional accents */
 ::selection {
     background: #667eea;
     color: white;
 }
 
-/* Custom scrollbar for webkit browsers */
+.steam-link {
+    color: #1b88e9;
+    text-decoration: underline;
+}
+.steam-link:hover {
+    color: #66c0f4;
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;

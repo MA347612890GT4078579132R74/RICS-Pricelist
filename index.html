@@ -9,7 +9,9 @@
 <body>
     <div class="container">
         <header>
+			<!-- PUT YOUR NAME HERE -->
             <h1>RICS Store</h1>
+			<!-- Change TExt here to anything you like -->
             <p>Interactive purchase list for RICS mod</p>
         </header>
 
@@ -19,6 +21,7 @@
             <button class="tab-button" data-tab="weather">Weather</button>
             <button class="tab-button" data-tab="traits">Traits</button>
             <button class="tab-button" data-tab="races">Races</button>
+			<button class="tab-button" data-tab="mods">Mods</button>
         </div>
 
         <div class="tab-content">
@@ -108,35 +111,42 @@
                 </div>
             </div>
 
-            <!-- Races Tab -->
-            <div id="races" class="tab-pane">
+			<!-- Races Tab -->
+			<div id="races" class="tab-pane">
+				<div class="search-box">
+					<input type="text" id="races-search" placeholder="Search races and xenotypes..." class="search-input">
+				</div>
+				
+				<div id="races-container" class="races-container">
+					<!-- Populated by JavaScript with collapsible groups -->
+				</div>
+			</div>
+			<!-- Mods Tab -->
+            <div id="mods" class="tab-pane">
                 <div class="search-box">
-                    <input type="text" id="races-search" placeholder="Search races and xenotypes..." class="search-input">
+                    <input type="text" id="mods-search" placeholder="Search mods..." class="search-input">
                 </div>
                 <div class="table-container">
-                    <table id="races-table" class="items-table">
+                    <table id="mods-table" class="items-table">
                         <thead>
                             <tr>
-                                <th data-sort="name">Name</th>
-                                <th data-sort="basePrice">Price</th>
-                                <th data-sort="minAge">Age Range</th>
-                                <th>Genders</th>
+                                <th data-sort="name">Mod Name</th>
+                                <th data-sort="author">Author</th>
+                                <th data-sort="version">Version</th>
+                                <th>Steam Workshop</th>
                             </tr>
                         </thead>
-                        <tbody id="races-tbody">
-                            <!-- Races loaded by JavaScript -->
+                        <tbody id="mods-tbody">
+                            <!-- Mods loaded by JavaScript -->
                         </tbody>
                     </table>
                 </div>
             </div>
-        </div>
+		
+		</div>
     </div>
 
     <script src="assets/js/rics-store.js"></script>
 </body>
 
 </html>
-
-
-
-
