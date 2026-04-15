@@ -203,18 +203,6 @@
     "modactive": true,
     "Version": 1
   },
-  "VQEA_AncientComplex": {
-    "DefName": "VQEA_AncientComplex",
-    "Label": "ancient complex",
-    "Description": null,
-    "BaseCost": 175,
-    "KarmaType": "Neutral",
-    "EventCap": 3,
-    "Enabled": true,
-    "ModSource": "Vanilla Quests Expanded - Ancients",
-    "modactive": true,
-    "Version": 1
-  },
   "VPE_Hurricane": {
     "DefName": "VPE_Hurricane",
     "Label": "hurricane",

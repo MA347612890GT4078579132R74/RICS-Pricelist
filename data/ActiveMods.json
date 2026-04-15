@@ -1,6 +1,6 @@
 {
-  "exportedAt": "2026-04-08T01:53:28.9946269Z",
-  "totalActiveMods": 127,
+  "exportedAt": "2026-04-15T01:36:08.9893660Z",
+  "totalActiveMods": 128,
   "mods": [
     {
       "author": "Captolamia",
@@ -354,6 +354,12 @@
       "author": "misstall",
       "name": "Misstall's Vigil Race",
       "steamId": "3473101740",
+      "version": null
+    },
+    {
+      "author": "Almantuxas",
+      "name": "Mouse Drag Lag Fix (Linux)",
+      "steamId": "2986170057",
       "version": null
     },
     {
